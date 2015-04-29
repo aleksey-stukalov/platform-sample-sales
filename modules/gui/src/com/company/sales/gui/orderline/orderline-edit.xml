@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.4/window.xsd"
+        caption="msg://editCaption"
+        class="com.company.sales.gui.orderline.OrderLineEdit"
+        datasource="orderLineDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.company.sales.gui.orderline">
+    <dsContext>
+        <datasource id="orderLineDs"
+                    class="com.company.sales.entity.OrderLine"
+                    view="orderLine-with-product"/>
+        <collectionDatasource id="productDs"
+                              class="com.company.sales.entity.Product"
+                              view="_local">
+            <query>
+                <![CDATA[select e from sales$Product e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="orderLineDs">
+            <column width="250px">
+                <field id="product"
+                       optionsDatasource="productDs"/>
+                <field id="quantity"/>
+            </column>
+        </fieldGroup>
+        <iframe id="windowActions"
+                screen="editWindowActions"
+                stylename="window-actions"/>
+    </layout>
+</window>
