@@ -11,7 +11,7 @@ This is the ‘Hello World’ application which is designed to show the core cap
   - Creating data sources for screens to display composite screens
   - Visual editing of the existing screens
 
-The Sales application is a simple purchase management system that enables tracking orders made by customers. Each order consists of a number of products. Customers, products and orders can be created, edited and deleted through the system user interface.
+The Sales application is a simple purchase management system that enables tracking orders made by customers. Each order contains a number of products. Customers, products and orders can be created, edited and deleted through the system user interface.
 
 The tutorial videos with the detailed description are available on the [Quick Start](https://www.cuba-platform.com/en/quickstart). The [Quick Start](https://www.cuba-platform.com/en/quickstart) enables you to start your own CUBA application within 30 minutes.
 
